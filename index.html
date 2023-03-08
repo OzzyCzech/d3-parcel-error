@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Example error</title>
+	<script type="module" src="index.js"></script>
+</head>
+<body>
+
+<main style="margin: 2rem auto; max-width: 680px">
+
+	<h1>D3 chart should be here...</h1>
+	<div id="chart" style="border: 1px solid #ddd; padding: 1em; margin: 1em auto; width: 400px; height: 400px;"></div>
+
+	<div id="console" style="border: 1px solid red; padding: 1em; margin: 1em auto;border-radius: 5px; color: red; font-family: monospace; font-size: 1.5rem; white-space: break-spaces;display: none;"></div>
+
+	<script>
+		window.onerror = function (message, source, lineno, colno, error) {
+			const cons = document.getElementById('console');
+			cons.style.display = 'block';
+			cons.innerHTML += `<h2>Error console</h2>${message} ${source} ${lineno} ${colno} ${error}`;
+		};
+	</script>
+</main>
+</body>
+</html>
