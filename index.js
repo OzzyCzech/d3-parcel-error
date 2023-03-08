@@ -1,5 +1,6 @@
 import * as d3 from 'd3';
 
+// console.log(d3); // This will print the d3 object and fix an error in the console
 
 class Chart {
 
