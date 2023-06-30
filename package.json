@@ -1,18 +1,21 @@
 {
-	"name": "d3error",
-	"version": "1.0.0",
-	"license": "MIT",
-	"scripts": {
-		"clean": "rm -rf dist",
-		"start": "parcel index.html",
-		"build": "yarn clean && parcel build index.html --no-cache",
-		"serve": "serve -s dist",
-		"ok": "yarn clean && yarn start",
-		"error": "yarn clean && yarn build && yarn serve"
-	},
-	"dependencies": {
-		"d3": "^7.8.5",
-		"parcel": "^2.9.3",
-		"serve": "^14.2.0"
-	}
+  "name": "d3error",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "start": "parcel index.html",
+    "build": "yarn clean && parcel build index.html --no-cache",
+    "serve": "serve -s dist",
+    "ok": "yarn clean && yarn start",
+    "error": "yarn clean && yarn build && yarn serve"
+  },
+  "dependencies": {
+    "d3": "^7.8.5",
+    "parcel": "^2.9.3",
+    "serve": "^14.2.0"
+  },
+  "alias": {
+    "d3": "d3/dist/d3.js"
+  }
 }
